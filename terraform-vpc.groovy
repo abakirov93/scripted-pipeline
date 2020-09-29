@@ -21,7 +21,7 @@ else if(params.environment == 'prod') {
 node{
     stage("Pull Repo"){
         cleanWs()
-        git branch: 'master', url: 'https://github.com/ikambarov/terraform-vpc.git'
+        git branch: 'master', url: 'https://github.com/maksiess/terraform-vpc.git'
     }
 
     withEnv(["AWS_REGION=${aws_region_var}"]) {
